@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.StringIndexerModel","timestamp":1572004525597,"sparkVersion":"2.4.4","uid":"strIdx_1711783c2947","paramMap":{"inputCol":"windDegLabel_v1","outputCol":"windDegIndx_v1","handleInvalid":"skip"},"defaultParamMap":{"stringOrderType":"frequencyDesc","outputCol":"strIdx_1711783c2947__output","handleInvalid":"error"}}

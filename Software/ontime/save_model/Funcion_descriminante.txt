@@ -1,0 +1,15 @@
+The used model is :RF option weather :N
+8967.0  4635.0  
+5077.0  8229.0  
+Accuracy %= 63.90664486398098
+Recall label 0.0 = 65.92412880458755
+Recall label 1.0 = 61.84428077558996
+Train samples: 81321
+Test samples: 26908
+##################################################################
+Algorithm using delayMean and discriminate function
+3554.0  10048.0  
+1719.0  11587.0  
+Accuracy %= 56.26951092611863
+Recall label 0.0 = 26.12851051315983
+Recall label 1.0 = 87.08101608297008

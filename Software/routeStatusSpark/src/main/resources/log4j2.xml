@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="debug" name="routeStautsSpark" packages="">
+  <Appenders>
+    <RollingFile name="RollingFile" fileName="routeStautsSpark.log"
+                 append="true" bufferedIO="true" filePattern="C:/Users/adilazh1/eclipse-workspace/logs/routeStatus/routeStatusSpark-$${date:yyyy-MM-dd}/routeStatusSpark-%d{MM-dd-yyyy}-%i.log.gz" >
+        <Policies>
+            <TimeBasedTriggeringPolicy />
+            <SizeBasedTriggeringPolicy size="10 MB"/>
+        </Policies>
+        <PatternLayout>
+            <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+      </PatternLayout>
+    </RollingFile>
+  </Appenders>
+  <Loggers>
+    <Root level="debug">
+      <AppenderRef ref="RollingFile"/>
+    </Root>
+  </Loggers>
+</Configuration>

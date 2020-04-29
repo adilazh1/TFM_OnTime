@@ -1,0 +1,89 @@
+<configuration>
+
+	<!-- CSV -->
+
+	<config name="csv-separator">;</config>
+
+
+	<!-- DATALAKE -->
+
+	<config name="datalake-dir">C:/Users/adilazh1/eclipse-workspace/_DATALAKE</config>
+	<config name="flightstats-dir">flightstats</config>
+	<config name="openflights-dir">openflights</config>
+	<config name="cfg-dir">cfg</config>
+	
+	<config name="go2Datalake4Routes">true</config>
+
+	<!-- cfg  -->
+	
+	<!-- nombre fichero que contiene el universo de aeropuertos para el prototipo-->
+	<config name="airports-univers-file">airports_final.txt</config>
+
+	<!-- API flightstats -->
+
+ 	<config name="appId">xxxx</config>
+	<config name="appKey">xxxxx</config>
+
+	<!-- Connections API -->
+	<!-- https://developer.flightstats.com/api-docs/connections/v2 -->
+
+	<!-- API default (important) values -->
+	<!-- numero de escalas intermedias-->
+	<config name="maxConnections">1</config>
+	<!-- horas hacia atrás en las que mirar vuelos (firstflightin) -->
+	<config name="numHours">24</config>
+	<!-- máximo número de resultados-->
+	<config name="maxResults">250</config>
+	<!-- otros params -->
+	<config name="includeSurface">false</config>
+	<config name="payloadType">passenger</config>
+	<config name="includeCodeshares">true</config>
+	<config name="includeMultipleCarriers">true</config>
+
+	<!-- Tipo API Connection firstflightIN. Vuelos que LLEGAN ANTES de la hora indicada -->
+
+	<!-- connections-firstflightin directory  -->
+	<config name="firstflightin-dir">api/connections/firstflightin</config>
+	<!-- connections-firstflightin url template -->
+	<config name="firstflightin-url">https://api.flightstats.com/flex/connections/rest/v2/json/firstflightin/#SRC#/to/#DST#/arriving_before/#YEAR#/#MONTH#/#DAY#/#HOUR#/#MIN#</config>
+
+	<!-- connections-firstflightin  other params fixed -->
+	<!-- momento a partir del cuál mirar hacia atrás -->
+	<config name="firstflightin-hour">23</config>
+	<config name="firstflightin-min">59</config>
+
+
+	<!-- Tipo API Connection firstflightOUT. Vuelos que SE VAN DESPUES de la hora indicada -->
+
+	<!-- connections-firstflightout directory  -->
+	<config name="firstflightout-dir">api/connections/firstflightout</config>
+	<!-- connections-firstflightout url template -->
+	<config name="firstflightout-url">https://api.flightstats.com/flex/connections/rest/v2/json/firstflightout/#SRC#/to/#DST#/leaving_after/#YEAR#/#MONTH#/#DAY#/#HOUR#/#MIN#</config>
+
+	<!-- connections-firstflightin  other params fixed -->
+	<!-- momento a partir del cuál mirar hacia atrás -->
+	<config name="firstflightout-hour">0</config>
+	<config name="firstflightout-min">0</config>
+
+
+	<!-- Python interface -->
+	<config name="python-dir">C:/Users/adilazh1/eclipse-workspace/ontime/python</config>
+	<!-- csv rutas dir-->
+	<config name="merge-csv-dir">C:/Users/adilazh1/eclipse-workspace/ontime/python/csv/merged</config>
+
+
+ 	<!-- Model -->
+
+	<!-- dir donde se deja modelo entrenado (falta Y/N al final segun si hay weather o no)-->
+	<config name="model-dir">C:\Users\adilazh1\eclipse-workspace\ontime\save_model\GBTC2019-10-25_</config>
+	<!-- dir donde estan los indexes del modelo entrenado -->
+	<config name="model-index-dir">C:\Users\adilazh1\eclipse-workspace\ontime\save_model\Index\GBTC2019-10-25_Indx-</config>
+	<!-- modelo naive bayes -->
+	<config name="model-name">GBTC</config>
+	
+	
+<!-- TimeZone -->
+	<config name="timeZone">Europe/Madrid</config>
+
+	
+</configuration>

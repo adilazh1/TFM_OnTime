@@ -1,0 +1,16 @@
+
+https://docs.mongodb.com/manual/reference/program/mongoimport/#bin.mongoimport
+mongoimport --db historicalData --collection routeRatings --file routeRatings_v2.json
+
+
+mongoimport --db historicalData --collection routeRatings --file routeRatings
+mongoimport --db historicalData --collection airportWeather --file airportWeather
+
+
+creación indice
+================
+mongo   (client)
+show dbs
+use historicalData
+db.airportWeather.createIndex({"airport":1})
+db.airportWeather.getIndexes()

@@ -1,0 +1,4 @@
+ ;departureAirpor;arrivalAirpor;carrierFsCode;departureMonth;arrivalMonth;departureDay;arrivalDay;departureDayMoment;arrivalDayMoment
+pValues; 0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0]
+degreesOfFreedom;1372; 1391; 560; 2; 2; 6; 6; 7; 7
+statistics;13423.004;11158.960;17112.130;1799.099;1790.308;1758.606;1348.148;5412.144;4533.337
