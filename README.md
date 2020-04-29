@@ -55,3 +55,8 @@ Dado que el proyecto no se mantiene ni está alojado en ningún servidor, si des
 -Maven
 ## Demo
 ![](https://github.com/adilazh1/TFM_OnTime/blob/master/ontime_launcher.png?raw=true)
+
+El proyecto ha sido desarrollado por:  
+- Raúl Bautista Erustes
+- Adria Canton Aynes
+- Adil Ziani El Ali
