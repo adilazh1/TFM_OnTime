@@ -34,7 +34,7 @@ Modelos implementados:
 -Support Vector Machine  
 -OneVsRest Support Vector Machine   
 -OneVsRest regression  
--Naiv Bayes  
+-Naive Bayes  
   
 También sobre-escribe un csv de estadísticas de los diferentes algoritmos para así tener accuracy, tiempos, etc de cada algoritmo usado.
 ##### routeStatus
